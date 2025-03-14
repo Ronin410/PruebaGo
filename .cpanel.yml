@@ -1,3 +1,4 @@
+---
 deployment:
   tasks:
     - export DEPLOYPATH=/home3/alexryan/public_html/PruebaGo/  # Ajusta la ruta de despliegue
