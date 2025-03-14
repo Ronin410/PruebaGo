@@ -3,4 +3,7 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home3/alexryan/public_html/PruebaGo/  # Ajusta la ruta de despliegue
     - /bin/cp -r * $DEPLOYPATH
-    - /home3/alexryan/public_html/PruebaGo/PruebaGo.exe 
+    - /bin/cp -r * $DEPLOYPATH # Copia todos los archivos al directorio de despliegue
+    - cd $DEPLOYPATH # Cambia al directorio de despliegue
+    - chmod +x PruebaGo # Da permisos de ejecución al binario de Linux
+    - ./PruebaGo # Ejecuta el binario de Linux
